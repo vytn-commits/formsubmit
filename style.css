@@ -1,0 +1,218 @@
+/*navigation bar styling*/
+:root{
+    --primary-color: #FFFFFF;
+    --primary-accent: #f1f1f1;
+    --secondary-accent: #9ba79a;
+    --text-color: black;
+}
+nav{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); 
+    font-family: Kedebideri;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    width: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+nav ul{
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li{
+    height: 3vh;
+    display: flex;
+}
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: background-color 150ms ease;
+}
+.nav-link:hover{
+    background-color: var(--primary-accent);
+}
+nav li:first-child{
+    transition: background-color 150ms ease;
+    color: black;
+}
+.search{
+    display: flex;
+    width: max-content;
+    align-items: centre;
+    padding: 14px;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+}
+.search-input{
+    font-size: 16px;
+    font-family: 'Lexend' sans-serif;
+    color: #000000;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    transition: box-shadow 0.25s;
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75 );
+}
+
+.search-input::placeholder,
+.search-icon {
+    color:rgba(0, 0, 0, 0.25);
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    z-index: 1000;
+}
+.hamburger.active .bar:nth-child(2){
+        opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    align-items: center;
+    text-align: centre;
+    transition: 0.3s;
+    display: flex;
+    z-index: 999;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-menu.active{
+    display: flex;
+    top: 0;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    height: 20%;
+}
+@media (max-width: 800px){
+    .search{
+        display: none;
+    }
+}
+/*background*/
+body{
+    background-color:white;
+}
+h1{
+    color: black; 
+    font-family: Noto+Serif+Hentaigana;
+    padding: 0px 30px;
+}
+h2{
+    color: black;
+    font-family: Kedebideri;
+}
+
+/*grid layout + design*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 1.5fr 1fr;
+    gap: 1em;
+}
+
+.item{
+    padding: 2em;
+    background-color: var(--primary-accent);
+    color: var(--text-color);
+    text-align: centre;
+}
+
+#learn{
+    font: size 25px;
+    background-color: var(--secondary-accent);
+    color: white;
+    border-radius:50px;
+    border-color: var(--secondary-accent);
+}
+
+/*Contact form*/
+.item{
+    width: 90vw;
+}
+.contact hr{
+    border: none;
+    width: 150px;
+    background-color: var(--secondary-accent);
+    margin-left: 10px;
+    height: 3px;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+.contact{
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.row{
+    display: flex;
+    gap: 20px;
+}
+.row input{
+    flex: 1;
+}
+.contact input,
+.contact textarea{
+    padding: 8px;
+    margin: 10px;
+    font-size: 12px;
+    transition: 0.3s;
+    font-family: 'Lexend' sans-serif;
+}
+.contact textarea{
+    width: 93vw;
+    font-family: 'Lexend' sans-serif;
+}
+.contact input[type="submit"]{
+    width: 100px;
+    align-self: center;
+    background: var(--secondary-accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact input[type="submit"]:hover{
+    background: #667d69;
+    transform: translateY(-1px);
+}
