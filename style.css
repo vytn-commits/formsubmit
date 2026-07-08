@@ -128,20 +128,28 @@ nav li:first-child{
         display: none;
     }
 }
+
 /*background*/
 body{
     background-color:white;
 }
 h1{
     color: black; 
-    font-family: Noto+Serif+Hentaigana;
-    padding: 0px 30px;
+    font-family: Kedebideri;
+    font-weight: bold;
 }
 h2{
     color: black;
     font-family: Kedebideri;
 }
-
+h3{
+    color: black;
+    font-family: Kedebideri;
+}
+p{
+    color: black;
+    font-family: Kedebideri;
+}
 /*grid layout + design*/
 .grid-container {
     display: grid;
@@ -157,6 +165,25 @@ h2{
     text-align: centre;
 }
 
+
+
+/*Hero section*/
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.hero-img{
+    border-radius: 50px;
+    width: 30vw;
+    height: auto;
+    margin: 0 0.1em 0 5em;
+}
+p {
+    display: block;
+    width: 40vw;
+}
+/**/
 #learn{
     font: size 25px;
     background-color: var(--secondary-accent);
@@ -164,7 +191,6 @@ h2{
     border-radius:50px;
     border-color: var(--secondary-accent);
 }
-
 /*Contact form*/
 .item{
     width: 90vw;
@@ -198,6 +224,8 @@ h2{
     font-size: 12px;
     transition: 0.3s;
     font-family: 'Lexend' sans-serif;
+    border: 1px solid #a6b3a5;
+    border-radius: 10px;
 }
 .contact textarea{
     width: 93vw;
