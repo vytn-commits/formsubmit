@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kedebideri&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
         
         <!--font links-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +43,7 @@
                     <li class="nav-link"><a href="Projects.html" class="nav-item">Projects</a></li>
                     <li class="nav-link"><a href="#" class="nav-item">Contact Us</a></li>
                 </ul>
+            </nav>
         </header>
 
         <div class="grid-container">
@@ -53,31 +55,93 @@
                     <div class="hero-right">
                         <h1>EcoArc Studios</h1>
                         <h3>A step towards sustainable architecture.</h3>
-                        <p>An architecture firm focused on sustainable practises, EcoArc Studios prioritise the environment in every build.</p>
+                        <p>An architecture firm focused on sustainable practices, EcoArc Studios prioritise the environment in every build.</p>
                     </div>
                 </div>
             </div>
 
-            
             <div class="item">
                 <div class="info-container">
                     <div class="about-us">
-                        <!-- about us card-->    
+                        <!-- about us card-->
+                        <h1>About Us</h1>
+                        <p>EcoArc is an innovative architecture firm focused on sustainable and green architecture. We believe in creating architecture that fits harmoniously with surrounding nature to emphasise the importance of the balance between nature and man-made structures.</p> 
                         <a href="About-Us.html">
                             <button id="learn"> Learn more </button>  
                         </a>  
                     </div>
-
+                    <hr style="width: 1em; height: 10em; margin-left: -1em; margin-right: -1em;">
                     <div class="projects">
                         <!-- projects card--> 
+                        <h1>Projects</h1>
+                            <div class="img-container swiper">
+                                <div class="img-wrapper">
+                                    <ul class="img-list swiper-wrapper">
+                                        <li class="img-item swiper-slide">
+                                            <a href="Beitou-Public-Library.html" class="img-link">
+                                                <div class="img-container">
+                                                    <img src="Beitou-Public-Library.jpg" alt="Beitou-Public-Library" class="img">
+                                                    <div class="img-overlay">
+                                                        <div class="rectangle"></div>
+                                                        <div class="overlay-text">Beitou Public Library</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="img-item swiper-slide">
+                                            <a href="Museum-of-Tomorrow.html" class="img-link">
+                                                <div class="img-container">
+                                                    <img src="Museum-of-Tomorrow.jpg" alt="Museum-of-Tomorrow" class="img">
+                                                    <div class="img-overlay">
+                                                        <div class="rectangle"></div>
+                                                        <div class="overlay-text">Museum of Tomorrow</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="img-item swiper-slide">
+                                            <a href="Flax-Pavilion.html" class="img-link">
+                                                <div class="img-container">
+                                                    <img src="Flax-Pavilion.jpg" alt="Flax-Pavilion" class="img">
+                                                    <div class="img-overlay">
+                                                        <div class="rectangle"></div>
+                                                        <div class="overlay-text">Flax Pavilion</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                         <li class="img-item swiper-slide">
+                                            <a href="ARCOS-Fuk.html" class="img-link">
+                                                <div class="img-container">
+                                                    <img src="ARCOS-Fuk.jpg" alt="ARCOS Fukuoka" class="img">
+                                                    <div class="img-overlay">
+                                                        <div class="rectangle"></div>
+                                                        <div class="overlay-text">ARCOS Fukuoka</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> <!--Swiper JS script-->
+                            <script src="script.js"></script>
 
+                            
+                            <div class="button-container">
+                                <a href="Projects.html">
+                                    <button id="view-all"> View all</button>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
 
             <div class="item">
                 <!-- contacts form section-->
-                <section class="contact">
+                <div class="contact">
                     <h2 style="margin-left: 10px;">Contact Us </h2>
                     <hr>
                     <form action="https://formsubmit.co/328a316d5b3a2567d3f3a289b0b60d5a" method="POST">
@@ -96,7 +160,7 @@
                         <br>
                         <input type="submit" value="Submit">
                     </form>
-                </section>
+                </div>
             </div>
         </div>
     </body>
