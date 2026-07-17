@@ -19,6 +19,58 @@
 
         <!--icons links-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+        <!--animation styling-->
+        <style>
+            @keyframes appear {
+                from {
+                    opacity: 0;
+                    clip-path: inset(100% 100% 0 0);
+                    scale: 0.5;
+                }
+                to {
+                    opacity: 1;
+                    clip-path: inset(0 0 0 0);
+                    scale: 1;
+                }
+            }
+
+            .heading{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .About-hr{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .Containers{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .right-text{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .right-img{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .left-text{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+            .right-img{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+        </style>
     </head>
 
     <body>
@@ -44,7 +96,46 @@
                 </ul>
         </header>
 
-        <h1>About Us</h1>
-        EcoArc is an innovative architecture firm focused on sustainable and green architecture.
+        <section id="hero">
+            <div class="About-Projects-container">
+                <div class="info">
+                    <h1 style="color: white;">About Us</h1>
+                    <p style="color: white;">Modern Architecture intertwined with Nature</p>
+                </div>
+            </div>
+        </section>
+        <section id="About-content">
+            <br>
+            <h2 class="heading">What we do</h2>
+            <hr class="About-hr">
+            <div class="Containers">
+                <img src="Organic-plan.jpg" alt="Architecture Plan" class="left-img">
+                <p class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptas exercitationem nulla aut quo a laboriosam maxime quia? Beatae quaerat veritatis a optio rerum illo! Architecto aliquam maxime deleniti impedit. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <h2 class="heading">Our philosophy</h2>
+            <hr class="About-hr">
+            <div class="Containers">
+                <p class="left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos, iure ex beatae quos tempore facilis iste aspernatur officiis omnis consequuntur perspiciatis non corporis voluptatem hic, eligendi quisquam. Veritatis, delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti harum quibusdam placeat quam eos, enim itaque, dicta officia inventore cum impedit nostrum, velit nihil eius cupiditate dolorem repellendus maiores.</p>
+                <img src="Sustainable-Architecture.jpg" alt="Sustainable Architecture" class="right-img">
+            </div>
+            <h2 class="heading">Our Vision</h2>
+            <hr class="About-hr">
+            <div class="Containers">
+                <img src="Vision.jpg" alt="Vision" class="left-img2">
+                <p class="right-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos, iure ex beatae quos tempore facilis iste aspernatur officiis omnis consequuntur perspiciatis non corporis voluptatem hic.</p>
+            </div>
+            <br>
+            <footer>
+                <div class="footer-container">
+                    <ul class="flex-row">
+                        <li><a href="index.html">Home</a></li>     
+                        <li class="nav-link"><a href="About-Us.html" class="nav-item">About Us</a></li>
+                        <li class="nav-link"><a href="Projects.html" class="nav-item">Projects</a></li>
+                        <li class="nav-link"><a href="#" class="nav-item">Contact Us</a></li> 
+                    </ul>
+                </div>
+                <p>&copy; 2026 EcoArc</p>
+            </footer>
+        </section>
     </body>
 </html> <!-- closing tag -->
