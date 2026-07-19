@@ -116,6 +116,7 @@ nav li:first-child{
     width: 100%;
     align-items: center;
     text-align: center;
+    padding: 20px;
     transition: 0.3s;
     display: flex;
     z-index: 999;
@@ -206,7 +207,7 @@ p{
 }
 /*About Us*/
 .about-us{
-    width: clamp(29vw, 30vw, 40vw);
+    width: 300px;
     object-fit: contain;
 }
 #learn{
@@ -431,7 +432,7 @@ p{
     margin-top: 3em;
 }
 .Containers .right-img{
-    width: clamp(300px, 35vw, 40vw);
+    width: clamp(200px, 35vw, 40vw);
     align-items: start;
 }
 .Containers .left-text{
@@ -450,17 +451,27 @@ p{
 }
 
 /*Projects page*/
+.header{
+    margin-left: 40px;
+}
 .projects-display{
+    width: 100%;
+    margin: 30px;
+}
+.proj-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-}
-.proj-item{
     list-style: none;
 }
+.proj-item{
+    flex: 1 1 calc(25% -15px);
+    max-width: 40%;
+    min-width: 20%;
+}
+
 .proj-link{
-    width: 30%;
     display: block;
     background-color: var(--primary-accent);
     padding: 2%;
@@ -469,6 +480,7 @@ p{
     transition: 0.3s;
 }
 .proj-link .img{
+    height: 25em;
     width: 100%;
     border-radius: 15px;
     object-fit: cover;
@@ -501,7 +513,8 @@ footer {
 .footer-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    padding: 200px 0 0 10px;
 }
 .flex-row{
     display: flex;
