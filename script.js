@@ -35,5 +35,3 @@ new Swiper('.img-wrapper', {
     },
   }
 });
-
-
