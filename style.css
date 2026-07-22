@@ -188,7 +188,7 @@ p{
 }
 .hero-img{
     border-radius: 50px;
-    width: 30vw;
+    width: 30em;
     min-width: 200px;
     height: auto;
     margin-left: clamp(20px, 3em, 5em);
