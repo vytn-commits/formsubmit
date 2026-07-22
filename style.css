@@ -213,7 +213,7 @@ p{
 #learn{
     font-size: clamp(0.7rem, 1rem, 1.2rem);
     background-color: var(--secondary-accent);
-    color: white;
+    color: black;
     border-radius:50px;
     border-color: var(--secondary-accent);
     font-family: Kedebideri;
@@ -314,7 +314,7 @@ p{
 #view-all{
     font-size: clamp(0.7rem, 1rem, 1.2rem);
     background-color: var(--secondary-accent);
-    color: white;
+    color: black;
     border-radius:50px;
     border-color: var(--secondary-accent);
     font-family: Kedebideri;
@@ -346,7 +346,7 @@ p{
 }
 .row{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 .row input{
     flex: 1;
@@ -363,12 +363,14 @@ p{
 #contact textarea{
     width: 93vw;
     font-family: 'Lexend' sans-serif;
+    height: 80px;
+    resize: none;
 }
 #contact input[type="submit"]{
     width: 100px;
     align-self: center;
     background: var(--secondary-accent);
-    color: white;
+    color: black;
     border: none;
     cursor: pointer;
     transition: 0.3s;
