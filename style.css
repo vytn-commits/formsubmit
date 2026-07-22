@@ -186,7 +186,7 @@ p{
     flex-direction: row;
     gap: 10vw;
 }
-.hero-img{
+.hero{
     border-radius: 50px;
     width: 30em;
     min-width: 200px;
@@ -259,7 +259,7 @@ p{
     cursor: pointer;
     transition: 0.3s;
 }
-.img-link .img-container .img{
+.img-link .img-container .project{
     height: 100%;
     width: 100%;
     object-fit: cover;
