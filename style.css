@@ -349,6 +349,7 @@ p{
 .row{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .row input{
     flex: 1;
@@ -361,8 +362,10 @@ p{
     font-family: 'Lexend' sans-serif;
     border: 1px solid #a6b3a5;
     border-radius: 10px;
+    max-width: 100%;
 }
 #contact textarea{
+    max-width: 100%;
     width: 93vw;
     font-family: 'Lexend' sans-serif;
     height: 80px;
@@ -466,8 +469,18 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 100%;
     gap: 15px;
     list-style: none;
+}
+@media screen and (max-width: 570px) {
+    .proj-wrapper{
+        gap: 0;
+    }
+    .projects-display{
+        margin: 0;
+    }
+    
 }
 .proj-item{
     flex: 1 1 calc(25% -15px);
