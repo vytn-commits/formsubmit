@@ -191,7 +191,7 @@ p{
     max-width: 100%;
     height: auto;
     margin-left: 1em;
-    margin-right: 0.5em;
+    margin-right: 0.1em;
 }
 .hero-right .p {
     display: block;
@@ -533,7 +533,7 @@ li{
 a{
     font-size: 12px;
     font-weight: 500;
-    color: rgba(148, 148, 148, 0.852);
+    color: black;
     text-decoration: none;
 }
 .copywrite{
