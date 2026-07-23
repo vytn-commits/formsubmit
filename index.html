@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="description" content="A website to display architectural projects">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css">
+        <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript></noscript><link rel="stylesheet" href="style.css"></noscript>
         <script src="script.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +69,7 @@
                         <!-- about us card-->
                         <h1>About Us</h1>
                         <p>EcoArc is an innovative architecture firm focused on sustainable and green architecture. We believe in creating architecture that fits harmoniously with surrounding nature to emphasise the importance of the balance between nature and man-made structures.</p> 
-                        <a href="About-Us.html">
+                        <a href="About-Us.html" alt="About Us page">
                             <button id="learn"> Learn more </button>  
                         </a>  
                     </div>
@@ -104,7 +105,7 @@
                                         <li class="img-item swiper-slide">
                                             <a href="Flax-Pavilion.html" class="img-link">
                                                 <div class="img-container">
-                                                    <img src="Flax-Pavilion.avif" alt="Flax-Pavilion" class="project">
+                                                    <img src="Flax-Pavilion.avif" alt="Flax-Pavilion" class="project" loading="lazy">
                                                     <div class="img-overlay">
                                                         <div class="rectangle"></div>
                                                         <div class="overlay-text">Flax Pavilion</div>
@@ -115,7 +116,7 @@
                                          <li class="img-item swiper-slide">
                                             <a href="ARCOS-Fuk.html" class="img-link">
                                                 <div class="img-container">
-                                                    <img src="ARCOS-Fuk.avif" alt="ARCOS Fukuoka" class="project">
+                                                    <img src="ARCOS-Fuk.avif" alt="ARCOS Fukuoka" class="project" loading="lazy">
                                                     <div class="img-overlay">
                                                         <div class="rectangle"></div>
                                                         <div class="overlay-text">ARCOS Fukuoka</div>
@@ -134,7 +135,7 @@
                             
 
                             <div class="button-container">
-                                <a href="Projects.html">
+                                <a href="Projects.html" alt="Projects page">
                                     <button id="view-all"> View all</button>
                                 </a>
                             </div>
