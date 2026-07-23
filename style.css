@@ -163,6 +163,7 @@ p{
     font-family: Kedebideri;
     font-size: clamp(14px, 1.5vw, 2.5vw); 
 }
+
 /*grid layout + general styling*/
 .grid-container {
     display: grid;
@@ -225,7 +226,6 @@ p{
     background: #667d69;
     transform: translateY(-1px);
 }
-
 /*Project*/
 .projects{
     width: 60vw;
@@ -250,11 +250,13 @@ p{
     user-select: none;
     border-radius: 15%;
     text-decoration: none;
+    width: 100%
 }
 .img-item .img-link .img-container{
     position: relative;
     display: inline-block;
     height: 35vw;
+    width: 100%;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -269,6 +271,7 @@ p{
     text-wrap: nowrap;
     font-size: clamp(1vw, 1.5vw, 1.9vw); 
     position: absolute; /*positions text above layer below i.e. above the image*/
+    width: 100%;
     bottom: 10px;
     left: 8px;
     color: white;
