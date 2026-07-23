@@ -473,7 +473,7 @@ p{
     gap: 15px;
     list-style: none;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 500px) {
     .proj-wrapper{
         gap: 0;
     }
