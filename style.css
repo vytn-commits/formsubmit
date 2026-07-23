@@ -188,11 +188,10 @@ p{
 }
 .hero{
     border-radius: 50px;
-    width: 30em;
-    min-width: 200px;
+    max-width: 100%;
     height: auto;
-    margin-left: clamp(20px, 3em, 5em);
-    margin-right: 0.1em;
+    margin-left: 1em;
+    margin-right: 0.5em;
 }
 .hero-right .p {
     display: block;
